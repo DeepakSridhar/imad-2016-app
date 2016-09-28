@@ -3,11 +3,11 @@ console.log('Loaded!');
 var img=document.getElementById('madi');
 var marginLeft=0;
 function moveleft(){
-    marginLeft=marginLeft+10;
+    marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+'px';
 }
 
 img.onclick=function(){
     img.style.marginRight='100px';
-    var interval= setInterval(moveleft,100);
+    var interval= setInterval(moveleft,50);
 }
