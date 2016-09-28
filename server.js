@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles={ article-one:{
+var articles={ articleone:{
 title: 'Article One| Deepak Sridhar',
 heading: 'Article One: About Myself', 
 date: 'Sep 26 2016',
@@ -19,7 +19,7 @@ Hi, I'm Deepak. I'm a graduate student at Mcgill University.
 Hi, I'm Deepak. I'm a graduate student at Mcgill University.
 </p>`
 },
-article-two:{title: 'Article Two| Deepak Sridhar',
+articletwo:{title: 'Article Two| Deepak Sridhar',
 heading: 'Article Two: Projects', 
 date: 'Sep 28 2016',
 content: `<p>
@@ -27,7 +27,7 @@ Hi, I have done several projects in robotics and electronics.
 </p>`
 
 },
-article-three:{title: 'Article Three| Deepak Sridhar',
+articlethree:{title: 'Article Three| Deepak Sridhar',
 heading: 'Article Three: Experience', 
 date: 'Sep 28 2016',
 content: `<p>
