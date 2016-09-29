@@ -104,17 +104,6 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-var names=[];
-app.get('/submit-name', function (req, res) {
-    
-    var name=req.query.name;
-    
-    names.push(name);
-    //JSON java Script Object Notation
-    
-  res.send(JSON.stringify(names));
-});
-
 var comments=[];
 app.get('/comments', function (req, res) {
     
@@ -124,6 +113,17 @@ app.get('/comments', function (req, res) {
     //JSON java Script Object Notation
     
   res.send(JSON.stringify(comments));
+});
+
+var names=[];
+app.get('/submit-name', function (req, res) {
+    
+    var name=req.query.name;
+    
+    names.push(name);
+    //JSON java Script Object Notation
+    
+  res.send(JSON.stringify(names));
 });
 
 
