@@ -118,9 +118,9 @@ app.get('/submit-name', function (req, res) {
 var comments=[];
 app.get('/comments', function (req, res) {
     
-    var comment=req.query.comment;
+    var name=req.query.name;
     
-    comments.push(comment);
+    comments.push(name);
     //JSON java Script Object Notation
     
   res.send(JSON.stringify(comments));
