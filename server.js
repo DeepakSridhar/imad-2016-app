@@ -105,15 +105,15 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-var comments=[];
+var names=[];
 app.get('/article-one/comments', function (req, res) {
     
     var name=req.query.name;
     
-    comments.push(name);
+    names.push(name);
     //JSON java Script Object Notation
     
-  res.send(JSON.stringify(comments));
+  res.send(JSON.stringify(names));
 });
 
 var names=[];
