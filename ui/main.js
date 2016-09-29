@@ -63,8 +63,8 @@ var list='';
 };
 
 
-var submit=document.getElementById('submitbtn1');
-submit.onclick=function(){
+var submit1=document.getElementById('submitbtn1');
+submit1.onclick=function(){
     
     var request=new XMLHttpRequest();
     request.onreadystatechange= function(){
@@ -84,8 +84,8 @@ var list='';
     }
 };
     var nameInput=document.getElementById('comment');
-    var comment=nameInput.value;
-    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?comment='+ comment,true);
+    var name=nameInput.value;
+    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?comment='+ name,true);
     request.send(null);
     
 
