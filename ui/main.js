@@ -68,8 +68,8 @@ submit1.onclick=function(){
     
     var request1=new XMLHttpRequest();
     request1.onreadystatechange= function(){
-        if(request1.readyState==XMLHttpRequest.DONE){
-            if(request1.status==200)
+        if(request1.readyState===XMLHttpRequest.DONE){
+            if(request1.status===200)
             {
     var comments=request1.responseText;
 comments= JSON.parse(comments);
