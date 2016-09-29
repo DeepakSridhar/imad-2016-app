@@ -105,7 +105,7 @@ app.get('/counter', function (req, res) {
 });
 
 var comments=[];
-app.get('/comments', function (req, res) {
+app.get('/article-one/comments', function (req, res) {
     
     var name=req.query.name;
     
