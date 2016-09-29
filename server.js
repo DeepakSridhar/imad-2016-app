@@ -107,9 +107,9 @@ app.get('/counter', function (req, res) {
 var comments=[];
 app.get('/comments', function (req, res) {
     
-    var name=req.query.name;
+    var comment=req.query.comment;
     
-    comments.push(name);
+    comments.push(comment);
     //JSON java Script Object Notation
     
   res.send(JSON.stringify(comments));
