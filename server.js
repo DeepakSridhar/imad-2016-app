@@ -17,7 +17,7 @@ Hi, I'm Deepak. I'm a graduate student at Mcgill University.
 </p>
 <p>
 Hi, I'm Deepak. I'm a graduate student at Mcgill University.
-</p>`
+</p>`,comment:'Comments'
 },
 'article-two':{title: 'Article Two| Deepak Sridhar',
 heading: 'Article Two: Projects', 
@@ -38,6 +38,7 @@ function createTemplate (data) {
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
+    var comment=data.comment;
     var content=data.content;
     
     var htmlTemplate=`
@@ -67,6 +68,21 @@ function createTemplate (data) {
          ${content}
             </div>
             </div>
+            <div>
+            <br/>
+             <hr/>
+            <h1>
+                ${comment}
+            </h1>
+            </div>
+             <hr/>
+        
+        <input type="text" id="comment" placeholder="comment" width="200px"> </input><br/>
+        <input type="submit" value="submit" id='submitbtn1'></input>
+        <ul id='namelist1'>
+            
+        </ul>
+        
         </body>
         
     
@@ -97,6 +113,17 @@ app.get('/submit-name', function (req, res) {
     //JSON java Script Object Notation
     
   res.send(JSON.stringify(names));
+});
+
+var comments=[];
+app.get('/comments', function (req, res) {
+    
+    var name=req.query.name;
+    
+    comments.push(name);
+    //JSON java Script Object Notation
+    
+  res.send(JSON.stringify(comments));
 });
 
 
