@@ -62,7 +62,7 @@ var list='';
     request.send(null);
 };
 
-var submita=document.getElementById('submitbtn1');
+var submita=document.getElementById('submitbtna');
 submita.onclick=function(){
     
     var request=new XMLHttpRequest();
@@ -77,7 +77,7 @@ var list='';
         list+='<li>'+names[i]+'</li>';
         
         }
-        var ul= document.getElementById('namelist1');
+        var ul= document.getElementById('namelista');
         ul.innerHTML=list;
         }
     }
