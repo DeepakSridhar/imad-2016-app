@@ -36,7 +36,7 @@ button.onclick= function(){
 };
 
 
-var submit=document.getElementById('submit _btn');
+var submit=document.getElementById('submitbtn');
 submit.onclick=function(){
     
     var request=new XMLHttpRequest();
