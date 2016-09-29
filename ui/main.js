@@ -16,7 +16,7 @@ img.onclick=function(){
     if(marginLeft==505)
      img.style.marginRight='0px';
 }
-
+var counter=0;
 var button=document.getElementById('counter');
 button.onclick= function(){
     
