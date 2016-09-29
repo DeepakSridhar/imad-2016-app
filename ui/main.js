@@ -63,8 +63,8 @@ var list='';
 };
 
 
-var post=document.getElementById('submitbtn1');
-post.onclick=function(){
+var submit=document.getElementById('submitbtn1');
+submit.onclick=function(){
     
     var request=new XMLHttpRequest();
     request.onreadystatechange= function(){
