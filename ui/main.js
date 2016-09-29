@@ -33,4 +33,26 @@ button.onclick= function(){
     request.open('GET','http://deepaksridhar.imad.hasura-app.io/counter',true);
     request.send(null);
     
-}
+};
+
+var nameinput=document.getElementById('name');
+var name=nameinput.value;
+var submit=document.getElementById('submit _btn');
+submit.onclick=function(){
+    
+    var names=['Name1','Name2','Name3','Name4'];
+    var list='';
+    for(var i=0;i<names.length;i++){
+        list+='<li>'+names[i]+'</li>';
+        
+        }
+        var ul= document.getElementById('namelist');
+        ul.innerHTML=list;
+};
+
+
+
+
+
+
+
