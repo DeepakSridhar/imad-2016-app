@@ -16,3 +16,12 @@ img.onclick=function(){
     if(marginLeft==505)
      img.style.marginRight='0px';
 }
+
+var button=document.getElementById('counter');
+button.onclick= function(){
+    
+    
+    counter=counter+1;
+    var span= document.getElementById('count')
+    span.innerHtml= counter.toString();
+}
