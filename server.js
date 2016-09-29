@@ -71,9 +71,9 @@ function createTemplate (data) {
             <div>
             <br/>
              <hr/>
-            <h1>
+            <h3>
                 ${comment}
-            </h1>
+            </h3>
             </div>
              <hr/>
         
