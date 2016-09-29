@@ -30,5 +30,7 @@ button.onclick= function(){
         }
     }
     
+    request.open('GET','http://deepaksridhar.imad.hasura-app.io/counter',true);
+    request.send(null);
     
 }
