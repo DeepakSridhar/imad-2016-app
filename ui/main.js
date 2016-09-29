@@ -83,9 +83,9 @@ var list='';
         }
     }
 };
-    var nameInput=document.getElementById('post');
-    var post=nameInput.value;
-    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?post='+ post,true);
+    var nameInput=document.getElementById('comment');
+    var name=nameInput.value;
+    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?post='+ name,true);
     request.send(null);
     
 
