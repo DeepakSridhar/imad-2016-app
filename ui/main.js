@@ -62,8 +62,8 @@ var list='';
     request.send(null);
 };
 
-var submit=document.getElementById('submitbtn1');
-submit.onclick=function(){
+var submita=document.getElementById('submitbtn1');
+submita.onclick=function(){
     
     var request=new XMLHttpRequest();
     request.onreadystatechange= function(){
