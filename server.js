@@ -67,7 +67,7 @@ function createTemplate (data) {
             <div>
          ${content}
             </div>
-            </div>
+            
             <div>
             <br/>
              <hr/>
@@ -82,7 +82,7 @@ function createTemplate (data) {
         <ul id='namelist1'>
             
         </ul>
-        
+        </div>
         </body>
         
     
@@ -118,9 +118,9 @@ app.get('/submit-name', function (req, res) {
 var comments=[];
 app.get('/comments', function (req, res) {
     
-    var name=req.query.name;
+    var comment=req.query.comment;
     
-    comments.push(name);
+    comments.push(comment);
     //JSON java Script Object Notation
     
   res.send(JSON.stringify(comments));
