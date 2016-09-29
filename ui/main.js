@@ -73,19 +73,19 @@ submit1.onclick=function(){
             {
     var comments=request1.responseText;
 comments= JSON.parse(comments);
-var list='';
+var list1='';
     for(var i=0;i<comments.length;i++){
-        list+='<li>'+comments[i]+'</li>';
+        list1+='<li>'+comments[i]+'</li>';
         
         }
-        var ul= document.getElementById('namelist1');
-        ul.innerHTML=list;
+        var ul1= document.getElementById('namelist1');
+        ul1.innerHTML=list1;
         }
     }
 };
-    var nameInput=document.getElementById('comment');
-    var name=nameInput.value;
-    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?name='+ name,true);
+    var nameInput1=document.getElementById('comment');
+    var name1=nameInput1.value;
+    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?name='+ name1,true);
     request.send(null);
     
 
