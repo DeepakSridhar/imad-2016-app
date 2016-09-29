@@ -35,8 +35,7 @@ button.onclick= function(){
     
 };
 
-var nameinput=document.getElementById('name');
-var name=nameinput.value;
+
 var submit=document.getElementById('submit _btn');
 submit.onclick=function(){
     
@@ -55,7 +54,8 @@ submit.onclick=function(){
         ul.innerHTML=list;
         }
     }
-    
+    var nameinput=document.getElementById('name');
+var name=nameinput.value;
     request.open('GET','http://deepaksridhar.imad.hasura-app.io/submit-name?name='+ name,true);
     request.send(null);
     
