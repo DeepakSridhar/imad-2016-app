@@ -63,19 +63,19 @@ var list='';
 };
 
 
-var submit1=document.getElementById('submitbtn1');
-submit1.onclick=function(){
+var post=document.getElementById('submitbtn1');
+post.onclick=function(){
     
     var request=new XMLHttpRequest();
     request.onreadystatechange= function(){
         if(request.readyState==XMLHttpRequest.DONE){
             if(request.status==200)
             {
-    var names=request.responseText;
-names= JSON.parse(names);
+    var comments=request.responseText;
+comments= JSON.parse(comments);
 var list='';
-    for(var i=0;i<names.length;i++){
-        list+='<li>'+names[i]+'</li>';
+    for(var i=0;i<comments.length;i++){
+        list+='<li>'+comments[i]+'</li>';
         
         }
         var ul= document.getElementById('namelist1');
@@ -84,8 +84,8 @@ var list='';
     }
 };
     var nameInput=document.getElementById('comment');
-    var name=nameInput.value;
-    request.open('GET','http://deepaksridhar.imad.hasura-app.io/submit-name?name='+ name,true);
+    var comment=nameInput.value;
+    request.open('GET','http://deepaksridhar.imad.hasura-app.io/comments?comment='+ comment,true);
     request.send(null);
     
 
