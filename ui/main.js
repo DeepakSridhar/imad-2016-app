@@ -66,12 +66,12 @@ var list='';
 var submit1=document.getElementById('submitbtn1');
 submit1.onclick=function(){
     
-    var request=new XMLHttpRequest();
-    request.onreadystatechange= function(){
-        if(request.readyState==XMLHttpRequest.DONE){
-            if(request.status==200)
+    var request1=new XMLHttpRequest();
+    request1.onreadystatechange= function(){
+        if(request1.readyState==XMLHttpRequest.DONE){
+            if(request1.status==200)
             {
-    var comments=request.responseText;
+    var comments=request1.responseText;
 comments= JSON.parse(comments);
 var list='';
     for(var i=0;i<comments.length;i++){
