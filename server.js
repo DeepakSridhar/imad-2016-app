@@ -78,7 +78,7 @@ function createTemplate (data) {
              <hr/>
         
         <input type="text" id="comment" placeholder="comment" > </input>
-        <input type="post" value="post" id='submitbtn1'></input>
+        <input type="submit" value="submit" id='submitbtn1'></input>
         <ul id='namelist1'>
             
         </ul>
